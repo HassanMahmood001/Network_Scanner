@@ -1,5 +1,5 @@
 flask==2.0.2
-socket
+sockets
 bs4==0.0.1
 urllib
 
