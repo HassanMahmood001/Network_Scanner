@@ -2,7 +2,7 @@ flask==2.0.2
 sockets
 bs4==0.0.1
 urllib3
-
+requests
 beautifulsoup4==4.10.0
 scapy==2.4.5
 lxml==4.7.1
