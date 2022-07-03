@@ -5,7 +5,7 @@ from lib.livehosts import arp_scan
 from lib.osdetections import det
 from lib.ping import scan
 from lib.port_scanner1 import scanner1
-
+import os 
 
 app = Flask(__name__)
 
@@ -113,4 +113,5 @@ def ping_result():
 
 
 if __name__ == '__main__':
-   app.run()
+   port =os.environ.get("PORT", 5000)
+   app.run(host='0.0.0.0',port=port,debug=False,threaded=True)
