@@ -1,7 +1,7 @@
 import socket
 import json
 import sys
-import urllib.request
+import urllib3.request
 import requests
 from lxml import etree
 
@@ -99,7 +99,7 @@ f=[]
 #service number or service to cve number
 def service_number_to_cv(search1):
     print(search1)
-    uf = urllib.request.urlopen('https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword='+search1)
+    uf = urllib3.request.urlopen('https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword='+search1)
     html = uf.read()
     a=html.decode("utf-8")
     
